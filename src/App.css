@@ -26,3 +26,15 @@ body {
   text-align: center;
   animation: fadeIn 2s ease-in-out;
 }
+
+@media (max-width: 600px) {
+  .name {
+    font-size: 10vw;
+  }
+}
+
+@media (max-width: 400px) {
+  .name {
+    font-size: 10vw;
+  }
+}
