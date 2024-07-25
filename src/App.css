@@ -28,13 +28,13 @@ body {
 }
 
 @media (max-width: 600px) {
-  .name {
+  .center-text {
     font-size: 10vw;
   }
 }
 
 @media (max-width: 400px) {
-  .name {
+  .center-text {
     font-size: 10vw;
   }
 }
