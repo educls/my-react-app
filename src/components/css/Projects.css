@@ -4,7 +4,8 @@
 
 .project-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
 }
 
 .project-item {
@@ -19,4 +20,14 @@
 
 .project-item h3 {
   margin-top: 0;
+}
+
+.project-item img {
+  width: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+} 
+
+.project-item button {
+  margin: 30px;
 }
