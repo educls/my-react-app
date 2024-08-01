@@ -9,12 +9,10 @@ import Footer from './components/Footer';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import CodeBlock from './components/CodeBlock';
 import SocialMedia from './components/SocialMedia';
 import DownloadButton from './components/DownloadCVButton';
 
-import person from "./assets/person_sitting.png"
-
+import videoBackground from './assets/background_video.mp4'
 
 function App() {
   useEffect(() => {
@@ -29,7 +27,7 @@ function App() {
       <div className="fullscreen-video-container">
         <div className="video-background">
           <video autoPlay loop muted>
-            <source src="/src/assets/background_video.mp4" type="video/mp4" />
+            <source src={videoBackground} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
