@@ -1,13 +1,53 @@
 import './App.css';
-import './components/Loading';
-import Loading from './components/Loading';
+import React, { useEffect } from 'react';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+import Header from './components/Header';
+import Footer from './components/Footer';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import CodeBlock from './components/CodeBlock';
+import SocialMedia from './components/SocialMedia';
+import DownloadButton from './components/DownloadCVButton';
+
+import person from "./assets/person_sitting.png"
+
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    });
+    AOS.refresh();
+  }, []);
+
   return (
-    <div className="center-text">
-      Eduardo Cesar
-      <br />
-      <Loading></Loading>
+    <div className="App">
+      <div className="fullscreen-video-container">
+        <div className="video-background">
+          <video autoPlay loop muted>
+            <source src="/src/assets/background_video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <Header />
+        <div className="block-container">
+          <div className='block-introduction'>
+            <SocialMedia />
+            <DownloadButton />
+            {/* <CodeBlock /> */}
+          </div>
+        </div>
+      </div>
+      <main>
+        <About />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 }
