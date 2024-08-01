@@ -15,6 +15,7 @@ import DownloadButton from './components/DownloadCVButton';
 import videoBackground from './assets/background_video.mp4'
 
 function App() {
+  document.title = 'Eduardo Cesar'
   useEffect(() => {
     AOS.init({
       duration: 1200,
