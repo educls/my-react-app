@@ -10,7 +10,7 @@ function ButtonMenu() {
   };
 
   return (
-    <div>
+    <div className='button-menu-lateral'>
       <input
         className="checkbox"
         type="checkbox"
@@ -26,9 +26,9 @@ function ButtonMenu() {
       </label>
       <div className={`sidebar ${isChecked ? 'active' : ''}`}>
         <ul>
-          <li><a href="#about" onClick={handleToggle}>About</a></li>
-          <li><a href="#projects" onClick={handleToggle}>Projects</a></li>
-          <li><a href="#contact" onClick={handleToggle}>Contact</a></li>
+          <li><a href="#about" onClick={handleToggle}>Sobre</a></li>
+          <li><a href="#projects" onClick={handleToggle}>Projetos</a></li>
+          <li><a href="#contact" onClick={handleToggle}>Contato</a></li>
         </ul>
       </div>
     </div>
