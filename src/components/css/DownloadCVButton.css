@@ -5,7 +5,7 @@
   --bg-color: #323232;
   --main-color: #dedede;
   position: relative;
-  width: 150px;
+  width: 180px;
   height: 40px;
   cursor: pointer;
   display: flex;
@@ -30,7 +30,7 @@
 
 .button .button__icon {
   position: absolute;
-  transform: translateX(105px);
+  transform: translateX(135px);
   height: 100%;
   width: 39px;
   background-color: var(--bg-color-sub);
@@ -53,7 +53,7 @@
 }
 
 .button:hover .button__icon {
-  width: 138px;
+  width: 178px;
   transform: translateX(0);
 }
 
