@@ -18,7 +18,7 @@ const About = () => {
     data-aos-delay="100">
       <h2>About Me</h2>
       <p>Sou um desenvolvedor full stack Jr.</p>
-      <h3>Técnologias</h3>
+      <h3>Tecnologias</h3>
       <div className='row-tec-icons'>
         <img src={jsIcon} alt="" />
         <img src={tsIcon} alt="" />
