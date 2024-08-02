@@ -32,3 +32,33 @@
 .project-item button {
   margin: 30px;
 }
+
+@media (max-width: 600px) {
+  .project-item img {
+    width: 450px;
+  } 
+}
+
+@media (max-width: 550px) {
+  .project-item img {
+    width: 400px;
+  } 
+}
+
+@media (max-width: 500px) {
+  .project-item img {
+    width: 370px;
+  } 
+}
+
+@media (max-width: 450px) {
+  .project-item img {
+    width: 300px;
+  } 
+}
+
+@media (max-width: 400px) {
+  .project-item img {
+    width: 250px;
+  } 
+}

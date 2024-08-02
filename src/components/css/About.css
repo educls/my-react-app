@@ -6,7 +6,6 @@
 .row-tec-icons {
   display: flex;
   flex-direction: row;
-
 }
 
 .row-tec-icons img {
@@ -15,4 +14,13 @@
   margin-right: 40px;
   object-fit: cover;
   border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  .row-tec-icons {
+    flex-wrap: wrap;
+  }
+  .row-tec-icons img {
+    margin-top: 20px;
+  }
 }

@@ -46,19 +46,18 @@
   transform: rotate(-90deg);
 }
 
-/* A terceira barra pode ser animada também se necessário */
 .checkbox:checked + .toggle .bar3 {
   transform: rotate(-0deg);
   transition-duration: .3s;
   transform-origin: right;
 }
 
-/* Estilos para o menu lateral */
+
 .sidebar {
   position: fixed;
   margin: 98px 0 0 0;
   right: 350px;
-  top: -550px; /* Fora da tela inicialmente */
+  top: -550px;
   width: 250px;
   height: 200px;
   background-color: rgba(34, 34, 34, 0.8);
@@ -70,7 +69,7 @@
 }
 
 .sidebar.active {
-  top: 0; /* Dentro da tela quando ativo */
+  top: 0;
 }
 
 .sidebar ul {
